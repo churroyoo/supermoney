@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display         =swap" rel="stylesheet">
+
+<html>
+    <head>
+        <title>Supermoney</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+        <style>
+            
+            .myDiv {
+                margin: auto;
+                width: 60%;
+            }
+            .logo {
+                height: auto;
+                image-rendering: pixelated;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: crisp-edges;
+                width: 35%;
+                float: left;
+            }
+            .title {
+                width: 65%;
+                float: left;
+                text-align: center;
+                font-size: 9vw;
+            }
+            .character{
+                width: 150px;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                left: 40%;
+                overflow: hidden;
+                image-rendering: pixelated;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: crisp-edges;
+            }
+            .intro {
+                margin: 0;
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, 60%);
+                font-size: 2em;
+            }
+            body {
+                background-color: #4fabe2;
+                color: white;
+                font-family: VT323;
+                
+            }
+            .sheet {
+                animation: moveSpritesheet 1s steps(4) infinite;
+                width: 600px;
+                height: auto;
+            }
+            @keyframes moveSpritesheet{
+                from {
+                    transform: translate3d(0px,0,0)
+                }
+                to {
+                    transform: translate3d(-100%,0,0)
+                }
+            }   
+        </style>
+    </head>
+    
+    <body>
+        <div class="myDiv">
+            <img class="logo" src="supermoney.png" alt="Supermoney logo">
+            <h1 class="title">Supermoney</h1>
+        </div>
+        <p1 class="intro">Hi there! I'm Charles the UX Designer!</p1>
+        <div class="character">
+            <img class="sheet" src="spritesheet.png">
+        </div>
+    </body>
+</html>
